@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	
+	
+  <test thread-count="5" name="chrome">
+	  
+	  <!-- Set Browser -->
+	  <parameter name="browser" value="chrome"></parameter>
+	  
+	  
+	  <parameter name="firstName" value="Shahana Shirin"></parameter>
+	  <parameter name="lastName" value="K"></parameter>
+	  <parameter name="PhoneNumber" value="7902767576"></parameter>
+	  <parameter name="password" value="123456"></parameter>
+	  <parameter name="confirmPassword" value="123456"></parameter>
+	  
+	  <parameter name="newPassword" value="123456789"></parameter>
+	  
+	  <classes>
+		  <class name="testPackage.RegisterTest"></class>
+		  <class name="testPackage.LoginTest"></class>
+		  <class name="testPackage.ChangePasswordTest"></class>
+		  <class name="testPackage.ForgotPasswordTest"></class>
+		  <class name="testPackage.AddToCartTest"></class>
+		  <class name="testPackage.CartTest"></class>
+		  <class name="testPackage.CheckoutTest"></class>
+		  
+	  </classes>
+	  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
